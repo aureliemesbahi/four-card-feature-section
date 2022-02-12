@@ -1,0 +1,232 @@
+*, ::after, ::before{
+    padding: 0%;
+    margin: 0%;
+}
+
+body{
+    padding: 0px;
+    margin: 0px;
+    background-color: #F2F2F2;
+    color: #4D4F62;
+}
+
+.description{
+padding: 0%;
+margin: 0%;    
+height: auto;
+width: auto;
+margin-left:32px;
+margin-right: 32px;
+top: 80px;
+}
+
+.description h3{
+    position: relative;
+    margin-top: 85px;
+    margin-right: 7px;
+    margin-left: 7pxpx;
+    font-family: poppins;
+    font-weight: lighter;
+    font-size: 24px;
+    padding: 0%;
+    letter-spacing: 0.17px;
+    text-align: center;
+    font-style: normal;
+    height: 36px;
+}
+
+
+.description h1{
+    position: relative;
+    margin-top: 1px;
+    padding: 0%;
+    font-family: poppins;
+    font-size: 24px;
+    letter-spacing: 0.17px;
+    text-align: center;
+    font-weight: 600;
+    height: 36px;
+}   
+
+ 
+
+.description p{
+position: relative;
+margin-top: 16px;
+height: 36px;
+text-align: center;
+font-family: poppins;
+font-weight: 400;
+font-size: 15px;
+letter-spacing: 0.1px;
+opacity: 50%;
+}
+
+.allCards{
+    margin-bottom: 5.74%
+}
+.card{
+    position: relative;
+    border-top: 5px solid;
+    margin-left: 8.5%;
+    margin-right: 8,5%;
+    width:83%;
+}
+
+.supervisor{
+    margin-top: 76px;
+    height:222px;
+    border-color: #44D3D2;
+    box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+.builder{
+    margin-top: 25px;
+    height:222px;
+    border-color: #FF637B;
+    box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+.karma{
+    margin-top: 25px;
+    height:222px;
+    border-color: #FDBF00;
+    box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+
+
+.calculator{
+    margin-top: 25px;
+    height:222px;
+    border-color: #377FD2;
+    box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+
+.card h2{
+    font-family: poppins;
+    font-weight: 600;
+    margin-top: 27px;
+    margin-left: 28px;
+}
+
+.card p{
+    font-family: poppins;
+    font-weight: 400;
+    margin-top: 1px;
+    margin-left: 28px;
+    margin-right: 28px;
+    font-size: 13px;
+    line-height: 177%;
+    letter-spacing: 0.9%;
+    opacity: 50%;
+}
+
+.card img{
+    position: relative;
+    margin-top: 28px;
+    margin-right: 60px;
+    margin-left: 80%;
+    width: 18.33%;
+    max-width: 75px;
+    min-width: 57px;
+    height: auto;
+
+}
+
+@media screen and (min-width: 800px) {
+    .description{
+        position:absolute;
+        left: 31.25%;
+        right: 31.25%;
+        top: 80px;
+        padding: 0;
+        min-width: 305px;
+    }
+
+    .description h3{
+        margin-top:0 ;
+    }
+
+    .allCards{
+        position: relative;
+        width: 77%;
+        height: 57.5%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 312px;
+        bottom: 8.7%;
+        display: grid;
+        grid-template-columns: repeat(3, 33,33%);
+        grid-template-rows: repeat(4, 25%);
+        grid-template-areas: 
+        ". builder ."
+        "supervisor builder calculator"
+        "supervisor karma calculator"
+        ". karma ." ;
+        max-width: 1110px;
+        max-height: 530px;
+        
+
+    }  
+
+
+    .card{
+        position: relative;
+        border-top: 5px solid;
+        margin-top: 3.47%;
+        width: 97%;
+        height: auto;
+        max-width: 350px;
+        max-height: 250px;
+        min-width: 200px;
+
+        box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
+    }   
+
+    
+    .supervisor{
+        grid-area: supervisor;
+        border-color: #44D3D2;
+    
+    }
+    
+    .builder{
+        grid-area: builder;
+        border-color: #FF637B;
+    
+    }
+    
+    .karma{
+        grid-area: karma;
+        border-color: #FDBF00;
+    
+    }
+    
+        
+    .calculator{
+        grid-area: calculator;
+        border-color: #377FD2;
+    
+    }
+    
+    .card img{
+        position: relative;
+        width: 18.29%;
+        height: auto;
+        margin-right: 9,14% ;
+        margin-bottom: 12,8%;
+        min-width: 40px;
+    }
+
+    .card h2{
+        margin-top: 12,8%;
+    }
+}
+
+
